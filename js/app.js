@@ -42,29 +42,18 @@ const todoItemElements = document.querySelectorAll('.todo-items')
 console.log(todoItemElements)
 
 
-// for of
-for(let oneLiElement of todoItemElements){
-    console.log(oneLiElement.textContent)
-
-    if(oneLiElement.textContent === 'JavaScript'){
-        oneLiElement.style.color = 'red'
-    }
-    else if(oneLiElement.textContent === 'CSS'){
-        oneLiElement.style.color = 'blue'
-    }
-}
 
 // forEach()
-todoItemElements.forEach(function(oneLiElement){
-    console.log(oneLiElement.textContent)
+// todoItemElements.forEach(function(oneLiElement){
+//     console.log(oneLiElement.textContent)
 
-    if(oneLiElement.textContent === 'JavaScript'){
-        oneLiElement.style.color = 'red'
-    }
-    else if(oneLiElement.textContent === 'CSS'){
-        oneLiElement.style.color = 'blue'
-    }
-})
+//     if(oneLiElement.textContent === 'JavaScript'){
+//         oneLiElement.style.color = 'red'
+//     }
+//     else if(oneLiElement.textContent === 'CSS'){
+//         oneLiElement.style.color = 'blue'
+//     }
+// })
 
 
 
@@ -88,5 +77,31 @@ mainDiv.appendChild(pElement)
 console.log(pElement)
 
 
+const mainButton = document.querySelector('#main-button')
 
 
+console.log(mainButton)
+
+// Events (Next class I promise - Omar)
+// 2 arguments of the addEventListener
+// 1. what type of event
+// 2. function
+
+function sayHello(){
+    console.log('hello Bahrain')
+
+    // for of
+for(let oneLiElement of todoItemElements){
+    console.log(oneLiElement.textContent)
+
+    if(oneLiElement.textContent === 'JavaScript'){
+        oneLiElement.style.color = 'red'
+    }
+    else if(oneLiElement.textContent === 'CSS'){
+        oneLiElement.style.color = 'blue'
+    }
+}
+
+}
+
+mainButton.addEventListener('click',sayHello)
