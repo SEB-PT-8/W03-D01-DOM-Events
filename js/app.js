@@ -65,3 +65,28 @@ todoItemElements.forEach(function(oneLiElement){
         oneLiElement.style.color = 'blue'
     }
 })
+
+
+
+
+// creating a new element
+
+const mainDiv = document.querySelector('#main-div')
+
+
+console.log(mainDiv)
+
+// 1. create the element
+const pElement = document.createElement('p')
+
+// 2. populate the element
+pElement.textContent = 'new P Element'
+
+// 3. append to the page
+mainDiv.appendChild(pElement)
+
+console.log(pElement)
+
+
+
+
