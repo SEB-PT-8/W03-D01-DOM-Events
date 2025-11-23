@@ -20,3 +20,48 @@ navLinkElement.href = 'https://www.google.com'
 navLinkElement.style.color = 'red'
 
 navLinkElement.style.backgroundColor = 'purple'
+
+
+mainHeaderElement.style.backgroundColor = 'red'
+
+
+
+// Exercise 1:
+// 1. add an img tag to your html with the id cat-image
+// 2. in your js fetch the img tag using querySelector
+// 3. change the src to a cat image from online: https://img.freepik.com/free-photo/portrait-beautiful-purebred-pussycat-with-shorthair-orange-collar-neck-sitting-floor-reacting-camera-flash-scared-looking-light-indoor_8353-12551.jpg?semt=ais_hybrid&w=740&q=80
+// 4. change the alt attribute to cat-picture
+
+
+
+
+
+// querySelector(): always returns ONE element
+const todoItemElements = document.querySelectorAll('.todo-items')
+
+console.log(todoItemElements)
+
+
+// for of
+for(let oneLiElement of todoItemElements){
+    console.log(oneLiElement.textContent)
+
+    if(oneLiElement.textContent === 'JavaScript'){
+        oneLiElement.style.color = 'red'
+    }
+    else if(oneLiElement.textContent === 'CSS'){
+        oneLiElement.style.color = 'blue'
+    }
+}
+
+// forEach()
+todoItemElements.forEach(function(oneLiElement){
+    console.log(oneLiElement.textContent)
+
+    if(oneLiElement.textContent === 'JavaScript'){
+        oneLiElement.style.color = 'red'
+    }
+    else if(oneLiElement.textContent === 'CSS'){
+        oneLiElement.style.color = 'blue'
+    }
+})
